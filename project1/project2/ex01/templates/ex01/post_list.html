@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Post List</title>
+</head>
+<body>
+    <h1>Posts</h1>
+    <ul>
+        {% for post in po   sts %}
+            <li>
+                <strong>{{ post.title }}</strong> - {{ post.content }}
+                <p>posted on {{ post.created_at }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
