@@ -1,0 +1,12 @@
+<!-- post_edit.html -->
+
+{% extends 'ex01/base.html' %} <!-- 이 부분은 기본 템플릿을 상속받는다고 가정합니다 -->
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+{% endblock %}

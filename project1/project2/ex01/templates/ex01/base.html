@@ -1,0 +1,16 @@
+<!-- base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <title>{% block title %}My Site{% endblock %}</title>
+    {% block extra_head %}{% endblock %}
+    {% endblock %}
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
